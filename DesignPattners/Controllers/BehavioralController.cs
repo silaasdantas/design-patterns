@@ -19,7 +19,7 @@ namespace DesignPatterns.Controllers
         }
 
         [HttpPost("Strategy")]
-        public IActionResult Strategy([FromBody]NotificationCommand command)
+        public IActionResult Strategy([FromBody]Notification command)
         {
             _logger.LogInformation($"BehavioralController::Strategy::Payload:: {command.Channel}");
 
