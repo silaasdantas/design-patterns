@@ -7,16 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Patterns\Structural\**" />
+    <Content Remove="Patterns\Structural\**" />
+    <EmbeddedResource Remove="Patterns\Structural\**" />
+    <None Remove="Patterns\Structural\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Patterns\Creational\" />
-    <Folder Include="Patterns\Structural\" />
+    <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\.editorconfig" Link=".editorconfig" />
+    <Folder Include="Patterns\Creational\" />
   </ItemGroup>
 
 </Project>

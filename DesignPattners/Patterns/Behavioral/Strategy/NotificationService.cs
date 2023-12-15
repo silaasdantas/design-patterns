@@ -18,7 +18,7 @@ namespace DesignPatterns.Patterns.Behavioral.Strategy
             _logger = logger;
         }
 
-        public void Notify(NotificationCommand command)
+        public void Notify(Notification command)
         {
             dicStrategy[command.Channel].SendNotification(command.Destination, command.Message);
         }

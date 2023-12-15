@@ -5,6 +5,6 @@ namespace DesignPatterns.Patterns.Behavioral.Strategy
 {
     public interface INotificationService
     {
-        void Notify(NotificationCommand command);
+        void Notify(Notification command);
     }
 }
